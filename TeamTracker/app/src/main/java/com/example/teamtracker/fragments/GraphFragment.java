@@ -50,5 +50,11 @@ public class GraphFragment extends Fragment {
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.personal_contribution_barchart_fragment_container, personalContributionBarchartFragment, "GraphFragment");
         fragmentTransaction.commit();
+
+        Fragment teamContributionPichartFragment = new TeamContributionPichartFragment(project);
+        FragmentManager fragmentManager1 = getActivity().getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction1 = fragmentManager1.beginTransaction();
+        fragmentTransaction1.replace(R.id.team_contribution_pichart_fragment_container, teamContributionPichartFragment, "GraphFragment1");
+        fragmentTransaction1.commit();
     }
 }

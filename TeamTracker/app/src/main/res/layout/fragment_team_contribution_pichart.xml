@@ -5,8 +5,8 @@
     android:layout_height="match_parent"
     tools:context=".fragments.PersonalContributionBarchartFragment">
 
-    <com.github.mikephil.charting.charts.BarChart
-        android:id="@+id/personal_contribution_barchart"
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/team_contribution_pichart"
         android:layout_width="match_parent"
-        android:layout_height="320dp"/>
+        android:layout_height="320dp" />
 </FrameLayout>
